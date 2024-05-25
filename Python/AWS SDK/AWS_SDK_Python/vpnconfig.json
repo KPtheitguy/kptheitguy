@@ -1,0 +1,68 @@
+{
+    "region_name": "us-west-1",
+    "customer_gateway": {
+        "BgpAsn": 65000,
+        "PublicIp": "203.0.113.12",
+        "Type": "ipsec.1",
+        "DeviceName": "CustomerGatewayDevice"
+    },
+    "vpn_connection": {
+        "CustomerGatewayId": "",
+        "Type": "ipsec.1",
+        "VpnGatewayId": "vgw-9daaf4d8",
+        "Options": {
+            "StaticRoutesOnly": true,
+            "TunnelOptions": [
+                {
+                    "TunnelInsideCidr": "169.254.10.0/30",
+                    "PreSharedKey": "presharedkey1",
+                    "Phase1LifetimeSeconds": 28800,
+                    "Phase2LifetimeSeconds": 3600,
+                    "RekeyFuzzPercentage": 100,
+                    "RekeyMarginTimeSeconds": 540,
+                    "StartupAction": "add",
+                    "DPDTimeoutSeconds": 30,
+                    "DPDTimeoutAction": "clear",
+                    "IKEVersions": [
+                        {
+                            "Value": "ikev1"
+                        },
+                        {
+                            "Value": "ikev2"
+                        }
+                    ],
+                    "Phase1EncryptionAlgorithms": [
+                        {
+                            "Value": "AES256"
+                        }
+                    ],
+                    "Phase2EncryptionAlgorithms": [
+                        {
+                            "Value": "AES256"
+                        }
+                    ],
+                    "Phase1IntegrityAlgorithms": [
+                        {
+                            "Value": "SHA2-256"
+                        }
+                    ],
+                    "Phase2IntegrityAlgorithms": [
+                        {
+                            "Value": "SHA2-256"
+                        }
+                    ],
+                    "Phase1DHGroupNumbers": [
+                        {
+                            "Value": 2
+                        }
+                    ],
+                    "Phase2DHGroupNumbers": [
+                        {
+                            "Value": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
