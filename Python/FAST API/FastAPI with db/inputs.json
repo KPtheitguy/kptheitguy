@@ -1,0 +1,32 @@
+{
+    "active_db": "mongodb",
+    "mongodb": {
+        "uri": "mongodbstring",
+        "database_name": "dbname",
+        "collection_name": "collection_name"
+    },
+    "mysql": {
+        "host": "localhost",
+        "port": 3306,
+        "user": "your_user",
+        "password": "your_password",
+        "database": "your_database"
+    },
+    "postgresql": {
+        "host": "localhost",
+        "port": 5432,
+        "user": "your_user",
+        "password": "your_password",
+        "database": "your_database"
+    },
+    "sqlserver": {
+        "host": "localhost",
+        "port": 1433,
+        "user": "your_user",
+        "password": "your_password",
+        "database": "your_database"
+    },
+    "jwt_secret_key": "WmFnVjlS4mPANJVqy9NW3qAf0ug6um5BGYx3EeIesl8",
+    "jwt_algorithm": "HS256",
+    "token_expiry_hours": 24
+}

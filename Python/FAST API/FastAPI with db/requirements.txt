@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pymongo[snappy,gssapi,srv,tls]
+pyjwt
+mysql-connector-python
+psycopg2-binary
+pyodbc
+sqlalchemy
+sqlmodel
+
+
